@@ -13,12 +13,11 @@ client = Client(api_key, secret_key)
 chck = 0
 admin_id = 394652149
 
-con = psycopg2.connect(user="postgres",
-                                password="5466",
-                                host="localhost",
+con = psycopg2.connect(user="uhwgxkaboaglce",
+                                password="75db761e1367ffdf929f791edc4dcd1a58936cbe3fa9e87c920ca16338f2374c",
+                                host="ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
                                 port="5432",
-                                database="crypto")
-cur = con.cursor()
+                                database="d5ehlrsmpq329l")
 
 async def scheme_analizer(prmin, user_id):
     end_counter = 0
