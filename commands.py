@@ -13,11 +13,11 @@ import requests
 import pandas as pd
 import re
 
-con = psycopg2.connect(user="postgres",
-                                password="5466",
-                                host="localhost",
+con = psycopg2.connect(user="uhwgxkaboaglce",
+                                password="75db761e1367ffdf929f791edc4dcd1a58936cbe3fa9e87c920ca16338f2374c",
+                                host="ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
                                 port="5432",
-                                database="crypto")
+                                database="d5ehlrsmpq329l")
 cur = con.cursor()
 
 api_key = '1QrbAnjDYWcnmKoQYVn2ZSphucr4yXZtWEwUATG103rqfgJqG0VZ5kW7vdtMIS0Q'
