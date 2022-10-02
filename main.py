@@ -8,8 +8,8 @@ con = psycopg2.connect(user="uhwgxkaboaglce",
                                 port="5432",
                                 database="d5ehlrsmpq329l")
 cur = con.cursor()
-cur.execute(f'create table best_profit_procents(scheme_id bigint primary key, time_now text, procent float, a_pay text, b_pay text)')
-con.commit()
+# cur.execute(f'create table best_profit_procents(scheme_id bigint primary key, time_now text, procent float, a_pay text, b_pay text)')
+# con.commit()
 async def on_startup(_):
     print('Bot is online')
 
