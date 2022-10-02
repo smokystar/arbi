@@ -18,6 +18,7 @@ con = psycopg2.connect(user="uhwgxkaboaglce",
                                 host="ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
                                 port="5432",
                                 database="d5ehlrsmpq329l")
+cur = con.cursor()
 
 async def scheme_analizer(prmin, user_id):
     end_counter = 0
