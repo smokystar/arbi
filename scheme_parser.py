@@ -1,20 +1,24 @@
 # from binance_api_keys import api_key, secret_key
 from binance import Client
-# from scan_bot.postgres import cur, con
 import requests
-from scan_bot.arbi_bot.create import dp, bot
-# from scan_bot.create import dp, bot
+from create import dp, bot
 import pandas as pd
-
+import psycopg2
 import json
 from datetime import datetime
-from scan_bot.everything.postgres import cur, con
 # user_id = 394652149
 api_key = '1QrbAnjDYWcnmKoQYVn2ZSphucr4yXZtWEwUATG103rqfgJqG0VZ5kW7vdtMIS0Q'
 secret_key = 'IU08Ye3WRhrjBEZl28vA9CN3TWL2fLSEv1XMZA8kYjmASbWOPpvVwhXfF6s6WQyS'
 client = Client(api_key, secret_key)
 chck = 0
 admin_id = 394652149
+
+con = psycopg2.connect(user="postgres",
+                                password="5466",
+                                host="localhost",
+                                port="5432",
+                                database="crypto")
+cur = con.cursor()
 
 async def scheme_analizer(prmin, user_id):
     end_counter = 0
