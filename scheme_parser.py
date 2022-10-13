@@ -944,7 +944,7 @@ async def scheme_analizer(prmin, user_id):
             # cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
             #             f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
             # con.commit()
-                if middle_deal == None:
+                if middle_deal == 'none':
 
                     await bot.send_message(mes_for_user_id, f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
                   f"Buy {a_coin} with {pay_a_max} by this link:\n"
@@ -994,7 +994,7 @@ async def scheme_analizer(prmin, user_id):
                 # cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
                 #             f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
                 # con.commit()
-                if middle_deal == None:
+                if middle_deal == 'none':
 
                     await bot.send_message(mes_for_user_id,
                                            f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
