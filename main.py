@@ -10,9 +10,9 @@ con = psycopg2.connect(user="uhwgxkaboaglce",
 cur = con.cursor()
 # cur.execute(f'create table best_profit_procents(scheme_id bigint primary key, time_now text, procent float, a_pay text, b_pay text)')
 # con.commit()
-cur.execute(f'create table arbi_users(tele_id bigint primary key, date text, pp_bot int, bc_bot int, exc_bot int, fastbuy_bot int)')
-con.commit()
-cur.execute(f'insert into arbi_users(tele_id) values (394652149)')
+# cur.execute(f'create table arbi_users(tele_id bigint primary key, date text, pp_bot int, bc_bot int, exc_bot int, fastbuy_bot int)')
+# con.commit()
+cur.execute(f'insert into arbi_users(tele_id) values (342070469)')
 con.commit()
 
 async def on_startup(_):
