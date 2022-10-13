@@ -12,8 +12,8 @@ cur = con.cursor()
 # con.commit()
 # cur.execute(f'create table arbi_users(tele_id bigint primary key, date text, pp_bot int, bc_bot int, exc_bot int, fastbuy_bot int)')
 # con.commit()
-cur.execute(f'insert into arbi_users(tele_id) values (342070469)')
-con.commit()
+# cur.execute(f'insert into arbi_users(tele_id) values (342070469)')
+# con.commit()
 
 async def on_startup(_):
     print('Bot is online')
