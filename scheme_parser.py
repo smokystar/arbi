@@ -956,7 +956,7 @@ async def scheme_analizer(prmin, user_id):
                                            f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
                                            f"1. Buy {a_coin} with {pay_a_max} by this link:\n"
                                            f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
-                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
+                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})\n\n"
                                            f"3. Sell {b_coin} with {pay_b_max} by this link:\n"
                                            f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}")
 
@@ -1007,7 +1007,7 @@ async def scheme_analizer(prmin, user_id):
                                            f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
                                            f"1. Buy {a_coin} with {pay_a} by this link:\n"
                                            f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
-                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
+                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})\n\n"
                                            f"3. Sell {b_coin} with {pay_b} by this link:\n"
                                            f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
 
