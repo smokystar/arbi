@@ -1012,5 +1012,5 @@ async def scheme_analizer(prmin, user_id):
                                            f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
 
         except Exception as e:
-            await bot.send_message(admin_id, f'error: {e}')
+            await bot.send_message(admin_id, f'error occured: {e}')
 
