@@ -81,7 +81,7 @@ async def scheme_analizer(prmin, user_id):
         sum_tr = tradeMethodName
         # print('sum_tr: ', sum_tr)
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'usdt'}
         usdt_buy_list.append(dict)
     # print('usdt_buy_list', usdt_buy_list)
 
@@ -125,7 +125,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'rub'}
         rub_sell_list.append(dict)
     # print('rub_sell_list', rub_sell_list)
 
@@ -169,7 +169,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'usdt'}
         usdt_sell_list.append(dict)
     # print('usdt_sell_list', usdt_sell_list)
 
@@ -213,7 +213,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'rub'}
         rub_buy_list.append(dict)
     # print('rub_buy_list', rub_buy_list)
 
@@ -257,7 +257,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'busd'}
         busd_sell_list.append(dict)
     # print('busd_sell_list', busd_sell_list)
 
@@ -301,7 +301,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'busd'}
         busd_buy_list.append(dict)
     # print('busd_buy_list', busd_buy_list)
 
@@ -345,7 +345,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'btc'}
         btc_sell_list.append(dict)
     # print('btc_sell_list', btc_sell_list)
 
@@ -389,7 +389,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'btc'}
         btc_buy_list.append(dict)
     # print('btc_buy_list', btc_buy_list)
 
@@ -433,7 +433,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin': 'eth'}
         eth_sell_list.append(dict)
     # print('eth_sell_list', eth_sell_list)
 
@@ -477,7 +477,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'eth'}
         eth_buy_list.append(dict)
     # print('eth_buy_list', eth_buy_list)
 
@@ -521,7 +521,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin':'bnb'}
         bnb_sell_list.append(dict)
     # print('bnb_sell_list', bnb_sell_list)
 
@@ -565,7 +565,7 @@ async def scheme_analizer(prmin, user_id):
         trademethod = i['adv']['tradeMethods']
         tradeMethodName = trademethod[0]['tradeMethodName']
         # print(tradeMethodName)
-        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link}
+        dict = {'price': merchant_price, 'paymethod': tradeMethodName, 'link': user_unique_link, 'coin': 'bnb'}
         bnb_buy_list.append(dict)
     # print('bnb_buy_list', bnb_buy_list)
 
@@ -599,7 +599,7 @@ async def scheme_analizer(prmin, user_id):
             if slvr > prmin * sum:
                 id_slvr += 1
                 best_1 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                          'link_b': j['link'], 'slvr': slvr}
+                          'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'usdt_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : usdt_last_price}
                 best_schemes_list.append(best_1)
 
                 # await bot.send_message(user_id, f'SUCCESS: i[price]: {a}, usdt_last_price: {usdt_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
@@ -620,7 +620,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_2 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'busd_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : busd_last_price}
                     best_schemes_list.append(best_2)
                     # await bot.send_message(user_id, f'SUCCESS: i[price]: {a}, busd_last_price: {busd_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -637,7 +637,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_3 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'btc_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : btc_last_price}
                     best_schemes_list.append(best_3)
                     # await bot.send_message(user_id, f'SUCCESS: i[price]: {a}, btc_last_price: {btc_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -654,7 +654,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_4 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'eth_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : eth_last_price}
                     best_schemes_list.append(best_4)
                     # await bot.send_message(user_id, f'SUCCESS: i[price]: {a}, eth_last_price: {eth_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -671,7 +671,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_5 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'bnb_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : bnb_last_price}
                     best_schemes_list.append(best_5)
                     # await bot.send_message(user_id, f'SUCCESS: i[price]: {a}, bnb_last_price: {bnb_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -688,7 +688,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_6 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'usdt_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : usdt_last_price}
                     best_schemes_list.append(best_6)
                     # print(f'SUCCESS IN REVERSE: i[price]: {a}, usdt_last_price: {usdt_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -705,7 +705,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_7 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'busd_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : busd_last_price}
                     best_schemes_list.append(best_7)
                     # print(f'SUCCESS IN REVERSE: i[price]: {a}, busd_last_price: {busd_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -722,7 +722,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_8 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'btc_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : btc_last_price}
                     best_schemes_list.append(best_8)
                     # print(f'SUCCESS IN REVERSE: i[price]: {a}, btc_last_price: {btc_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -739,7 +739,7 @@ async def scheme_analizer(prmin, user_id):
                 if slvr > prmin * sum:
                     id_slvr += 1
                     best_9 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'], 'b_pay': j['paymethod'],
-                              'link_b': j['link'], 'slvr': slvr}
+                              'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'eth_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : eth_last_price}
                     best_schemes_list.append(best_9)
                     # print(f'SUCCESS IN REVERSE: i[price]: {a}, eth_last_price: {eth_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -757,7 +757,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_10 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'triangle', 'middle_deal':'bnb_market_swap', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : bnb_last_price}
                     best_schemes_list.append(best_10)
                     # print(f'SUCCESS IN REVERSE: i[price]: {a}, bnb_last_price: {bnb_last_price}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -775,7 +775,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_11 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_11)
                     # await bot.send_message(user_id, f'BS SUCCESS USDT: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -793,7 +793,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_12 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_12)
                     # await bot.send_message(user_id, f'BS SUCCESS BUSD: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -811,7 +811,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_13 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_13)
                     # await bot.send_message(user_id, f'BS SUCCESS BTC: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -829,7 +829,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_14 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_14)
                     # await bot.send_message(user_id, f'BS SUCCESS ETH: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -847,7 +847,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_15 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_15)
                     # await bot.send_message(user_id, f'BS SUCCESS BNB: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -865,7 +865,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_16 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_16)
                     # await bot.send_message(user_id, f'BS SUCCESS RUB: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -883,7 +883,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_17 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_17)
                     # await bot.send_message(user_id, f'BS SUCCESS USDT->BUSD: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -901,7 +901,7 @@ async def scheme_analizer(prmin, user_id):
                     id_slvr += 1
                     best_18 = {'id_slvr': id_slvr, 'a_pay': i['paymethod'], 'link_a': i['link'],
                                'b_pay': j['paymethod'],
-                               'link_b': j['link'], 'slvr': slvr}
+                               'link_b': j['link'], 'slvr': slvr, 'arbi_method':'cross', 'middle_deal':'none', 'a_coin':i['coin'], 'b_coin':j['coin'], 'spot_last_price' : 'none'}
                     best_schemes_list.append(best_18)
                     # await bot.send_message(user_id, f'BS SUCCESS BUSD->USDT: i[price]: {a}, j[price]: {b}, slvr: {slvr}, a_payment_method: {a_pay}, b_payment_method: {b_pay}')
                 else:
@@ -912,16 +912,7 @@ async def scheme_analizer(prmin, user_id):
         max_k_list = []
         k_max = 0
         df = pd.DataFrame(best_schemes_list)
-        # for key in best_schemes_list:
-        #     k = key['slvr']
-        #     k_id = key['id_slvr']
-        #     print('k', k)
-        #     if k > k_max:
-        #         k_max = k
-        #         k_max_id = k_id
-        # print(f'new max k: {k_max}, min_k_id: {k_max_id}')
-        # print(best_schemes_list[0]['id_slvr']==k_max_id)
-        # str = df[df['slvr'] == df['slvr'].max()]
+        # df.to_excel('p2pmethodsresults.xlsx')
         str = df.sort_values(by='slvr', ascending=False)
         strstr = str.head(1)
         # print(strstr)
@@ -937,18 +928,37 @@ async def scheme_analizer(prmin, user_id):
             pay_a_max = items_max['a_pay']
             pay_b_max = items_max['b_pay']
             slvr_proc_max = (float(items_max['slvr']) - 1000) / (1000 / 100)
-            round_slvr_proc_max = round(slvr_proc_max, 3)
-            cur.execute(f'SELECT COUNT(*) FROM best_profit_procents')
-            best_proc_id = cur.fetchone()[0] + 1
-            datetime_prm = datetime.now()
-            cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
-                        f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
-            con.commit()
-            await bot.send_message(admin_id, f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
-                  f"You need to buy with {pay_a_max} by this link:\n"
+            round_slvr_proc_max = round(slvr_proc_max, 2)
+            a_coin = items_max['a_coin']
+            b_coin = items_max['b_coin']
+            # arbi_method = items_max['arbi_method']
+            spot_price = items_max['spot_last_price']
+            middle_deal = items_max['middle_deal']
+            cur.execute(f"select tele_id from arbi_users")
+            users = cur.fetchall()
+            for i in users:
+                mes_for_user_id = i[0]
+            # cur.execute(f'SELECT COUNT(*) FROM best_profit_procents')
+            # best_proc_id = cur.fetchone()[0] + 1
+            # datetime_prm = datetime.now()
+            # cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
+            #             f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
+            # con.commit()
+                if middle_deal == None:
+
+                    await bot.send_message(mes_for_user_id, f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
+                  f"Buy {a_coin} with {pay_a_max} by this link:\n"
                   f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
-                  f"And need to sell with {pay_b_max} by this link:\n"
+                  f"Sell {b_coin} with {pay_b_max} by this link:\n"
                   f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}")
+                else:
+                    await bot.send_message(mes_for_user_id,
+                                           f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
+                                           f"1. Buy {a_coin} with {pay_a_max} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
+                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
+                                           f"3. Sell {b_coin} with {pay_b_max} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}")
 
         except Exception as e:
             await bot.send_message(admin_id, f'error: {e}')
@@ -969,23 +979,38 @@ async def scheme_analizer(prmin, user_id):
             pay_b = items_qiwi['b_pay']
             slvr_proc = (float(items_qiwi['slvr']) - 1000) / (1000/100)
             round_slvr_proc = round(slvr_proc, 3)
-            cur.execute(f'SELECT COUNT(*) FROM best_profit_procents')
-            best_proc_id = cur.fetchone()[0] + 1
-            datetime_prm = datetime.now()
-            cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
-                        f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc}, '{pay_a}', '{pay_b}')")
-            con.commit()
-            await bot.send_message(admin_id, f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
-                  f"You need to buy with {pay_a} by this link:\n"
-                  f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
-                  f"And need to sell with {pay_b} by this link:\n"
-                  f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
+            a_coin = items_max['a_coin']
+            b_coin = items_max['b_coin']
+            # arbi_method = items_max['arbi_method']
+            spot_price = items_max['spot_last_price']
+            middle_deal = items_max['middle_deal']
+            cur.execute(f"select tele_id from arbi_users")
+            users = cur.fetchall()
+            for i in users:
+                mes_for_user_id = i[0]
+                # cur.execute(f'SELECT COUNT(*) FROM best_profit_procents')
+                # best_proc_id = cur.fetchone()[0] + 1
+                # datetime_prm = datetime.now()
+                # cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
+                #             f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
+                # con.commit()
+                if middle_deal == None:
+
+                    await bot.send_message(mes_for_user_id,
+                                           f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
+                                           f"1. Buy {a_coin} with {pay_a} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
+                                           f"2. Sell {b_coin} with {pay_b} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
+                else:
+                    await bot.send_message(mes_for_user_id,
+                                           f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
+                                           f"1. Buy {a_coin} with {pay_a} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
+                                           f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
+                                           f"3. Sell {b_coin} with {pay_b} by this link:\n"
+                                           f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
+
         except Exception as e:
             await bot.send_message(admin_id, f'error: {e}')
-    else:
-        await bot.send_message(admin_id, 'Nothing...(')
-# try:
-#     scheme_analizer(1.05, 394652149)
-#     await bot.send_message(admin_id, 'success!')
-# except Exception as e:
-#     await bot.send_message(admin_id, f'error: {e}')
+
