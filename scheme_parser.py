@@ -12,13 +12,7 @@ secret_key = 'IU08Ye3WRhrjBEZl28vA9CN3TWL2fLSEv1XMZA8kYjmASbWOPpvVwhXfF6s6WQyS'
 client = Client(api_key, secret_key)
 chck = 0
 admin_id = 394652149
-
-con = psycopg2.connect(user="uhwgxkaboaglce",
-                                password="75db761e1367ffdf929f791edc4dcd1a58936cbe3fa9e87c920ca16338f2374c",
-                                host="ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
-                                port="5432",
-                                database="d5ehlrsmpq329l")
-cur = con.cursor()
+from po import con, cur
 
 async def scheme_analizer(prmin, user_id):
     end_counter = 0
