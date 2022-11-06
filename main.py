@@ -8,7 +8,8 @@ from po import con, cur
 # con.commit()
 # cur.execute(f'insert into arbi_users(tele_id) values (342070469)')
 # con.commit()
-
+cur.execute(f'delete from best_profit_procents')
+con.commit()
 async def on_startup(_):
     print('Bot is online')
 
