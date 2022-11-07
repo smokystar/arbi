@@ -984,8 +984,11 @@ async def scheme_analizer(prmin, user_id):
             cur.execute(f"select tele_id from arbi_users")
             users = cur.fetchall()
             for i in users:
+                if middle_deal != 'none':
                 try:
-                    await bot.send_message(mes_for_user_id,
+                    mes_for_user_id = i[0]
+                    if middle_deal != 'none':
+                        await bot.send_message(mes_for_user_id,
                                                f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc}%\n\n"
                                                f"1. Купите {a_coin} через {pay_a} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
