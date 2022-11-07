@@ -951,7 +951,7 @@ async def scheme_analizer(prmin, user_id):
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
                                                f"2. Продать {b_coin} через {pay_b_max} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}\n\n"
-                                               f"Помните про риски, наш бот присылает только найденные связки")
+                                               f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
                 except:
                     mes_for_user_id = i[0]
                     await bot.send_message(admin_id, f'User {mes_for_user_id} blocked bot')
@@ -1001,7 +1001,7 @@ async def scheme_analizer(prmin, user_id):
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
                                                f"2. Продать {b_coin} через {pay_b} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}\n\n"
-                                               f"Помните про риски, наш бот присылает только найденные связки")
+                                               f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
                 except:
                     mes_for_user_id = i[0]
                     await bot.send_message(admin_id, f'User {mes_for_user_id} blocked bot')
