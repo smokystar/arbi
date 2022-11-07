@@ -25,7 +25,11 @@ admin_id = 394652149
 n = 0
 
 async def start_cmd(message: types.Message):
-    await bot.send_message(message.from_user.id, 'Hello!', reply_markup=key_menu_client)
+    user_id = message.from_user.id
+    if user_id == admin_id:
+        await bot.send_message(message.from_user.id, 'Start tasks with activate command', reply_markup=key_menu_client)
+    else:
+        await bot.send_message(message.from_user.id, 'Привет! Подождите немного и скоро мы предоставим вам доступ к боту. Приятного пользования!')
 
 
 async def mainmenu(message: types.Message):
