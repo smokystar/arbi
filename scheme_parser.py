@@ -939,7 +939,7 @@ async def scheme_analizer(prmin, user_id):
                                                f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc_max}%\n\n"
                                                f"1. Купите {a_coin} через {pay_a_max} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
-                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price}\n\n)"
+                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price})\n\n"
                                                f"3. Продайте {b_coin} через {pay_b_max} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}\n\n"
                                                f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
@@ -989,7 +989,7 @@ async def scheme_analizer(prmin, user_id):
                                                f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc}%\n\n"
                                                f"1. Купите {a_coin} через {pay_a} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
-                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price}\n\n)"
+                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price})\n\n"
                                                f"3. Продайте {b_coin} через {pay_b} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}\n\n"
                                                f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
