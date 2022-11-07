@@ -935,20 +935,23 @@ async def scheme_analizer(prmin, user_id):
                 try:
                     mes_for_user_id = i[0]
                     if middle_deal == None:
+                        await bot.send_message(mes_for_user_id,
+                                               f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc_max}%\n\n"
+                                               f"1. Купите {a_coin} через {pay_a_max} по этой ссылке:\n"
+                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
+                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price}\n\n)"
+                                               f"3. Продайте {b_coin} через {pay_b_max} по этой ссылке:\n"
+                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}\n\n"
+                                               f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
 
-                        await bot.send_message(mes_for_user_id, f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
-                      f"Buy {a_coin} with {pay_a_max} by this link:\n"
-                      f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
-                      f"Sell {b_coin} with {pay_b_max} by this link:\n"
-                      f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}")
                     else:
                         await bot.send_message(mes_for_user_id,
-                                               f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc_max}%\n\n"
-                                               f"1. Buy {a_coin} with {pay_a_max} by this link:\n"
+                                               f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc_max}%\n\n"
+                                               f"1. Купить {a_coin} через {pay_a_max} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_a}\n\n"
-                                               f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
-                                               f"3. Sell {b_coin} with {pay_b_max} by this link:\n"
-                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}")
+                                               f"2. Продать {b_coin} через {pay_b_max} по этой ссылке:\n"
+                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_max_b}\n\n"
+                                               f"Помните про риски, наш бот присылает только найденные связки")
                 except:
                     mes_for_user_id = i[0]
                     await bot.send_message(admin_id, f'User {mes_for_user_id} blocked bot')
@@ -982,29 +985,23 @@ async def scheme_analizer(prmin, user_id):
             users = cur.fetchall()
             for i in users:
                 try:
-                    mes_for_user_id = i[0]
-                    # cur.execute(f'SELECT COUNT(*) FROM best_profit_procents')
-                    # best_proc_id = cur.fetchone()[0] + 1
-                    # datetime_prm = datetime.now()
-                    # cur.execute(f"INSERT INTO best_profit_procents(scheme_id, time_now, procent, a_pay, b_pay)"
-                    #             f" VALUES ({best_proc_id}, '{datetime_prm}', {round_slvr_proc_max}, '{pay_a_max}', '{pay_b_max}')")
-                    # con.commit()
-                    if middle_deal == 'none':
-
-                        await bot.send_message(mes_for_user_id,
-                                               f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
-                                               f"1. Buy {a_coin} with {pay_a} by this link:\n"
+                    await bot.send_message(mes_for_user_id,
+                                               f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc}%\n\n"
+                                               f"1. Купите {a_coin} через {pay_a} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
-                                               f"2. Sell {b_coin} with {pay_b} by this link:\n"
-                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
+                                               f"2. Поменяйте на спотовом рынке на {b_coin} (Курс:{spot_price}\n\n)"
+                                               f"3. Продайте {b_coin} через {pay_b} по этой ссылке:\n"
+                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}\n\n"
+                                               f"Помните про риски, наш бот присылает только найденные связки в информационных целях")
+
                     else:
                         await bot.send_message(mes_for_user_id,
-                                               f"Profit scheme just has been found! Profit before taxes: {round_slvr_proc}%\n\n"
-                                               f"1. Buy {a_coin} with {pay_a} by this link:\n"
+                                               f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc}%\n\n"
+                                               f"1. Купить {a_coin} через {pay_a} по этой ссылке:\n"
                                                f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_a}\n\n"
-                                               f"2. Swap it on the spot market into {b_coin} (Price:{spot_price})"
-                                               f"3. Sell {b_coin} with {pay_b} by this link:\n"
-                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}")
+                                               f"2. Продать {b_coin} через {pay_b} по этой ссылке:\n"
+                                               f"https://p2p.binance.com/ru/advertiserDetail?advertiserNo={link_b}\n\n"
+                                               f"Помните про риски, наш бот присылает только найденные связки")
                 except:
                     mes_for_user_id = i[0]
                     await bot.send_message(admin_id, f'User {mes_for_user_id} blocked bot')
