@@ -984,7 +984,6 @@ async def scheme_analizer(prmin, user_id):
             cur.execute(f"select tele_id from arbi_users")
             users = cur.fetchall()
             for i in users:
-                if middle_deal != 'none':
                 try:
                     mes_for_user_id = i[0]
                     if middle_deal != 'none':
