@@ -36,7 +36,7 @@ async def scan(message: types.Message):
     user_id = message.from_user.id
     while n < 10:
         try:
-            await scheme_analizer(1.06, admin_id)
+            await scheme_analizer(1.03, admin_id)
             time.sleep(30)
         except Exception as e:
             await bot.send_message(message.from_user.id, f'Error occured!\n\n {e}')
