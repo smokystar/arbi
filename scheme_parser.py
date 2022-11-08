@@ -934,7 +934,7 @@ async def scheme_analizer(prmin, user_id):
             for i in users:
                 try:
                     mes_for_user_id = i[0]
-                    if middle_deal == None:
+                    if middle_deal != 'none':
                         await bot.send_message(mes_for_user_id,
                                                f"Прибыльная схема найдена! Процент прибыльности без учета комиссии: {round_slvr_proc_max}%\n\n"
                                                f"1. Купите {a_coin} через {pay_a_max} по этой ссылке:\n"
